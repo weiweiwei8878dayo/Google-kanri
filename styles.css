@@ -1,40 +1,16 @@
-/* Reset CSS: ブラウザのデフォルトスタイルをリセット */
-body, h1, h2, h3, h4, h5, h6, p, ul, li {
+/* styles.css */
+/* リセットCSSなどの初期化スタイルを適用する */
+body {
   margin: 0;
   padding: 0;
-}
-
-/* ページ全体の背景色やフォントの指定 */
-body {
-  background-color: #f8f8f8;
   font-family: Arial, sans-serif;
 }
 
 /* ヘッダーのスタイル */
 header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-}
-
-/* ヘッダー内のタイトルとナビゲーションのスタイル */
-header h1 {
-  font-size: 24px;
-}
-
-nav ul {
-  list-style-type: none;
-  margin-top: 10px;
-}
-
-nav li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
+  background-color: #f8f8f8;
+  padding: 10px;
+  /* その他のスタイルを適用する */
 }
 
 /* メインコンテンツのスタイル */
@@ -42,20 +18,37 @@ main {
   padding: 20px;
 }
 
-/* セクションのスタイル */
-section {
+/* 検索結果のスタイル */
+#searchResults {
+  margin-top: 20px;
+}
+
+#resultsList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#resultsList li {
   margin-bottom: 20px;
 }
 
-section h2 {
+#resultsList h3 {
+  margin: 0;
   font-size: 18px;
-  margin-bottom: 10px;
 }
 
-/* フッターのスタイル */
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
+#resultsList p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+#resultsList a {
+  font-size: 14px;
+  color: #0066cc;
+  text-decoration: none;
+}
+
+#resultsList a:hover {
+  text-decoration: underline;
 }
