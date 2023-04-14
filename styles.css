@@ -1,0 +1,61 @@
+/* Reset CSS: ブラウザのデフォルトスタイルをリセット */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* ページ全体の背景色やフォントの指定 */
+body {
+  background-color: #f8f8f8;
+  font-family: Arial, sans-serif;
+}
+
+/* ヘッダーのスタイル */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+/* ヘッダー内のタイトルとナビゲーションのスタイル */
+header h1 {
+  font-size: 24px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* メインコンテンツのスタイル */
+main {
+  padding: 20px;
+}
+
+/* セクションのスタイル */
+section {
+  margin-bottom: 20px;
+}
+
+section h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* フッターのスタイル */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
