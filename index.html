@@ -1,74 +1,74 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Google風検索結果</title>
     <style>
-        /* リセットCSS */
-        body, html {
-            margin: 0;
-            padding: 0;
+        /* スタイルは簡略化のために省略 */
+        body {
+            font-family: Arial, sans-serif;
         }
 
-        /* 検索結果のスタイル */
-        .search-results {
-            width: 800px;
-            margin: 0 auto;
-            padding-top: 100px;
+        #search-results {
+            margin-top: 20px;
         }
 
-        .search-results h1 {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-
-        .search-results ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .search-results li {
+        .result {
             margin-bottom: 10px;
         }
 
-        .search-results .title {
+        .result h3 {
+            margin: 0;
             font-size: 18px;
-            font-weight: bold;
-            color: #1a0dab;
         }
 
-        .search-results .url {
-            font-size: 14px;
-            color: #006621;
+        .result a {
+            color: #0066cc;
+            text-decoration: none;
         }
 
-        .search-results .description {
-            font-size: 16px;
+        .result a:hover {
+            text-decoration: underline;
+        }
+
+        .result p {
+            margin-top: 5px;
             color: #545454;
+            font-size: 14px;
         }
     </style>
 </head>
+
 <body>
-    <div class="search-results">
-        <h1>検索結果</h1>
-        <ul>
-            <li>
-                <div class="title">サンプルタイトル1</div>
-                <div class="url">https://example.com/sample1</div>
-                <div class="description">ここにサンプルの検索結果の説明文が入ります。ここにサンプルの検索結果の説明文が入ります。</div>
-            </li>
-            <li>
-                <div class="title">サンプルタイトル2</div>
-                <div class="url">https://example.com/sample2</div>
-                <div class="description">ここにサンプルの検索結果の説明文が入ります。ここにサンプルの検索結果の説明文が入ります。</div>
-            </li>
-            <li>
-                <div class="title">サンプルタイトル3</div>
-                <div class="url">https://example.com/sample3</div>
-                <div class="description">ここにサンプルの検索結果の説明文が入ります。ここにサンプルの検索結果の説明文が入ります。</div>
-            </li>
-        </ul>
+    <div id="header">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google"
+            id="logo">
+        <form id="search-form">
+            <input type="text" id="search-input" name="q" autofocus>
+            <input type="submit" id="search-button" value="Google 検索">
+        </form>
+        <form id="lucky-form">
+            <input type="submit" id="lucky-button" value="I'm Feeling Lucky">
+        </form>
+    </div>
+    <div id="search-results">
+        <div class="result">
+            <h3><a href="https://example.com/search?q=example" target="_blank">Example.com</a></h3>
+            <p>Example.com is a dummy website for demonstration purposes.</p>
+        </div>
+        <div class="result">
+            <h3><a href="https://example.org/search?q=example" target="_blank">Example.org</a></h3>
+            <p>Example.org is another dummy website for testing.</p>
+        </div>
+        <div class="result">
+            <h3><a href="https://example.net/search?q=example" target="_blank">Example.net</a></h3>
+            <p>Example.net provides example content for educational purposes.</p>
+        </div>
+    </div>
+    <div id="footer">
+        <a href="https://www.google.com/intl/ja/policies/privacy/">プライバシー</a>
+        <a href="https://www.google.com/intl/ja/policies/terms/">利用規約</a>
     </div>
 </body>
+
 </html>
