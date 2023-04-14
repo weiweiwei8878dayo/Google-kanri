@@ -1,54 +1,54 @@
 /* styles.css */
-/* リセットCSSなどの初期化スタイルを適用する */
-body {
+
+/* リセットCSS */
+body, figure, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ul, ol, li, pre, form, fieldset, blockquote, th, td, hr {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
 }
 
-/* ヘッダーのスタイル */
+/* ヘッダー */
 header {
-  background-color: #f8f8f8;
-  padding: 10px;
-  /* その他のスタイルを適用する */
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
 }
 
-/* メインコンテンツのスタイル */
+header h1 {
+  font-size: 28px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+/* メインコンテンツ */
 main {
   padding: 20px;
 }
 
-/* 検索結果のスタイル */
-#searchResults {
-  margin-top: 20px;
+section {
+  margin-bottom: 40px;
 }
 
-#resultsList {
-  list-style-type: none;
-  padding: 0;
+section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-#resultsList li {
-  margin-bottom: 20px;
-}
-
-#resultsList h3 {
-  margin: 0;
-  font-size: 18px;
-}
-
-#resultsList p {
-  margin: 5px 0;
-  font-size: 14px;
-  color: #666;
-}
-
-#resultsList a {
-  font-size: 14px;
-  color: #0066cc;
-  text-decoration: none;
-}
-
-#resultsList a:hover {
-  text-decoration: underline;
+/* フッター */
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
 }
