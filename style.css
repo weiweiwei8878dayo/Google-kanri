@@ -1,0 +1,45 @@
+/* リセットCSS */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* ヘッダー */
+header {
+  background-color: #f8f8f8;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav li {
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #70757a;
+}
+
+#user-profile img {
+  width: 32px;
+  height: 32px;
+}
+
+/* メインコンテンツ */
+main {
+  margin: 50px 0;
+}
+
+#home {
+  text-align
